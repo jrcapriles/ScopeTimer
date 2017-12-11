@@ -57,6 +57,6 @@ private:
 };
 
 //#define TIMER(name) Timer timer__(name);
-#define TIMERCPU(name) CPUTimer timer__(name);
-#define TIMERWALL(name) WallTimer timer__(name);
-#define TIMER(name, walltime) if(walltime) TIMERWALL(name) else TIMERCPU(name);
+#define SCOPE_CPU_TIMER(name) CPUTimer timer__(name);
+#define SCOPE_WALL_TIMER(name) WallTimer timer__(name);
+#define SCOPE_TIMER(name, walltime) if(walltime) SCOPEWALLTIMER(name) else SCOPECPUTIMER(name);
