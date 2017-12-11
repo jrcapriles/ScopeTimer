@@ -6,7 +6,27 @@ Simple scope timer that can be used without major modification to code.
 
 Include the file "scopeTimer.h" located at the include folder. There are 2 macros available in the header file to easily create the scope timers anywhere. The timers are created in the constructor and last until the object is destroyed.
 
-* Create a timer using CPU time: SCOPE_CPU_TIMER("Name")
-* Create a timer using Wall time: SCOPE_WALL_TIMER("Name")
+* CPU timer:
 
-Check the test folder to see examples of usages.
+```
+#include "scopeTimer.h"
+
+
+void foo() {
+
+	SCOPE_CPU_TIMER("foo function: ");
+	...
+}
+
+```
+
+* Wall timer:
+
+```
+#include "scopeTimer.h"
+
+void foo() {
+
+	SCOPE_WALL_TIMER("foo function: ");
+}
+```
