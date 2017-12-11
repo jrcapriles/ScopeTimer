@@ -1,15 +1,15 @@
 MKDIR := mkdir -p
 
 CC := g++
-SRCDIR := src
+TESTDIR := test
 INCLUDEDIR := include
 TARGET := bin
 INC := -I include
 
 all:
 	$(MKDIR) ./$(TARGET)
-	$(CC) $(SRCDIR)/cpu_timer.cpp $(INC) -o $(TARGET)/cpu_timer
-	$(CC) $(SRCDIR)/wall_timer.cpp $(INC) -o $(TARGET)/wall_timer
+	$(CC) $(TESTDIR)/cpu_timer.cpp $(INC) -o $(TARGET)/cpu_timer
+	$(CC) $(TESTDIR)/wall_timer.cpp $(INC) -o $(TARGET)/wall_timer
 
 clean:
 	rm $(TARGET)/*
