@@ -21,10 +21,10 @@ int waist_time()
 int main()
 {
 	int b  = 0;
-	TIMERCPU("Total for loop:");
+	SCOPE_CPU_TIMER("Total for loop:");
 	for (int i =0; i < 5; i++)
 	{
-		TIMERCPU("Inner loop:");
+		SCOPE_CPU_TIMER("Inner loop:");
 		b = waist_time();
 	}
 	

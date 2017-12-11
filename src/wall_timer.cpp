@@ -11,10 +11,10 @@
 
 int main()
 {
-	TIMERWALL("Total for loop:");
+	SCOPE_WALL_TIMER("Total for loop:");
 	for (int i =0; i < 5; i++)
 	{
-		TIMERWALL("Inner loop:");
+		SCOPE_WALL_TIMER("Inner loop:");
 		sleep(1);
 	}
 	return 0;
