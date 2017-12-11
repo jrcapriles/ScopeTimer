@@ -28,5 +28,6 @@ void foo() {
 void foo() {
 
 	SCOPE_WALL_TIMER("foo function: ");
+	...
 }
 ```
