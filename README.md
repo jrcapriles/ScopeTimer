@@ -1,6 +1,6 @@
 # ScopeTimer
 
-Simple scope timer that can be included without major modification to code. 
+Simple scope timer that can be used without major modification to code. 
 
 # Usage
 
